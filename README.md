@@ -1,12 +1,46 @@
 # Discord Bot - BerlinCityClub
 
-A Discord bot for the BerlinCityClub server with various social media integration features.
+A comprehensive Discord bot for the BerlinCityClub server with multiple automated features and moderation tools.
 
 ## Features
 
-- **Twitter Notifications**: Automatic notifications for new tweets
-- **TikTok Notifications**: Notifications for new TikTok videos  
-- **Linktree Sharing**: Daily social media links at 9:00 PM
+### 🐦 **Twitter Notifications**
+- Automatically checks for new tweets every 45 minutes (11 AM - 10 PM)
+- Posts notifications with reactions when new content is detected
+- Uses rotating API keys for reliability
+
+### 📱 **TikTok Notifications** 
+- Monitors for new TikTok videos every 30 minutes (11 AM - 2 PM)
+- Sends automatic notifications to designated channels
+- Includes custom emojis and reactions
+
+### 🌐 **Daily Social Media Promotion**
+- Automatically posts social media links at 9:00 PM daily
+- Includes interactive Linktree button
+- Custom embed with all social platforms
+
+### 🔗 **Link Protection System**
+- Advanced link filtering and moderation
+- Role-based permissions for link posting
+- Category and channel-specific whitelist system
+- Automatic link deletion for unauthorized users
+
+### 🔢 **Counting Channel Management**
+- Validates sequential number counting
+- Prevents same user from posting consecutive numbers
+- Automatic error handling and user feedback
+- Maintains counting integrity
+
+### 👋 **Welcome System**
+- Custom welcome messages for new members
+- Dynamic member count display
+- Embedded welcome image
+- Personalized greetings with user mentions
+
+### 🎮 **Gaming Content Reactions**
+- Automatic voting reactions on gameplay content
+- Community engagement features
+- Channel-specific functionality
 
 ## Setup
 
@@ -27,7 +61,7 @@ A Discord bot for the BerlinCityClub server with various social media integratio
    - Copy `jsons/notify.json.example` to `jsons/notify.json`
    - Fill in all placeholders with your actual values:
      - Discord Bot Token
-     - RapidAPI Keys
+     - RapidAPI Keys for Twitter and TikTok APIs
      - Discord Channel & Role IDs
 
 4. **Start the bot**
@@ -68,10 +102,30 @@ A Discord bot for the BerlinCityClub server with various social media integratio
 }
 ```
 
+## Bot Permissions Required
+
+- Send Messages
+- Manage Messages (for link deletion)
+- Add Reactions
+- Embed Links
+- Read Message History
+- Use External Emojis
+
+## Technical Details
+
+- **Language**: Python 3.10+
+- **Framework**: discord.py
+- **APIs Used**: 
+  - Twitter Data API (RapidAPI)
+  - TikTok Scraper API (RapidAPI)
+- **Timezone**: Europe/Berlin
+- **Architecture**: Cog-based modular system
+
 ## Important Notes
 
 ⚠️ **Security**: Never commit real API keys or tokens to the repository!
 ⚠️ **Setup**: All `.json` files in the `jsons/` folder must be configured before starting the bot.
+⚠️ **Permissions**: Ensure the bot has proper permissions in your Discord server.
 
 ## License
 
