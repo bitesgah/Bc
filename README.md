@@ -94,8 +94,8 @@ A comprehensive Discord bot for the BerlinCityClub server with multiple automate
   "ttnotify": {
     "latestvideourl": ""
   },
-  "notifyingchannel": YOUR_DISCORD_CHANNEL_ID_HERE,
-  "ttnotrole": YOUR_DISCORD_ROLE_ID_HERE,
+  "notifyingchannel": "YOUR_DISCORD_CHANNEL_ID_HERE",
+  "ttnotrole": "YOUR_DISCORD_ROLE_ID_HERE",
   "ApiKey1": "YOUR_RAPIDAPI_KEY_1_HERE",
   "ApiKey2": "YOUR_RAPIDAPI_KEY_2_HERE",
   "currentAPIKey": "ApiKey2"
