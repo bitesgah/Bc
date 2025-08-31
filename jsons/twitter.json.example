@@ -1,0 +1,6 @@
+{
+  "ApiKey1": "YOUR_RAPIDAPI_KEY_1_HERE",
+  "ApiKey2": "YOUR_RAPIDAPI_KEY_2_HERE", 
+  "currentAPIKey": "ApiKey1",
+  "newesttweet": ""
+}
